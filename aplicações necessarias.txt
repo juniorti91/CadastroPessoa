@@ -1,0 +1,5 @@
+
+#### pacotes instalados pelo gerenciador de pacotes pelo console do visual studio ####
+- install-package entityframework
+- Enable-Migrations
+- update-database => executado após adicionar o string connection
