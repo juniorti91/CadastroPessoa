@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>CadastroPessoas</title>
+    <link href="" rel="stylesheet" />
+</head>
+
+<body>
+    <script>
+        var nome = 'Junior Paixao';
+        var lista = [12, 15.6, 17, 'Junior'];
+        var obj = {
+            nome: 'Junior',
+            idade: 34,
+            altura: 1.85,
+            especialidades: ['Programação', 'Linguagens', 'Banco de Dados']
+        };
+
+        var objs = [
+            {
+                nome: 'Junior',
+                idade: 34,
+                altura: 1.85,
+                especialidades: ['Programação', 'Linguagens', 'Banco de Dados']
+            },
+            {
+                nome: 'Paixao',
+                idade: 40,
+                altura: 1.70,
+                especialidades: ['Programação', 'C#', 'JavaScript']
+            }
+        ];
+
+        function alterarParagrafo(cor, tamanho, texto, id) {
+            var paragrafo = document.getElementById(id);
+            paragrafo.style.color = cor;
+            paragrafo.style.fontSize = tamanho;
+            paragrafo.innerHTML = texto;
+        }
+
+        function mostrarNome() {
+            document.getElementById('meunome').value = nome;
+        }
+    </script>
+
+    <p id="primeiroParagrafo">Primeiro parágrafo</p>
+    <p id="segundoParagrafo">Segundo parágrafo</p>
+    <input value="" id="meunome" type="text"/>
+    <input type="text" />
+    <button onclick="alert(nome)">Mostrar valor da variavel nome</button>
+    <button onclick="mostrarNome()">Mostrar valor da variavel nome 02</button>
+    <button onclick="alterarParagrafo('green', '20pt', 'verde e tamanho 20pt', 'primeiroParagrafo')">paragrafo a ser alterado01</button>
+    <button onclick="alterarParagrafo('blue', '15pt', 'azul e tamanho 15pt', 'segundoParagrafo')">paragrafo a ser alterado02</button>
+
+</body>
+</html>

@@ -5,91 +5,16 @@
 <html>
 <head>
     <title>CadastroPessoas</title>
+    <link href="" rel="stylesheet" />
+    <script src="~/Scripts/funcoes.js"></script>
 </head>
 
 <body>
-    <h1>Título da página</h1>
-    <h2>Subtítulo</h2>
-    <h3>Subtítulo</h3>
-    <p>Minha primeira página HTML</p>
-    <span>Esse é um texto dentro do span</span>
-    <br />
     <div>
-
+        <label>Digite uma cor:</label><input type="text" id="cor" />
+        <label>Meu time:</label><input type="text" id="time" />
     </div>
-    <form>
-        <div>
-            <input type="text" />
-        </div>
-        <div>
-            <input type="radio" name="radio" /> Sim
-            <input type="radio" name="radio" /> Não
-            <input type="radio" name="radio" /> Talvez
-        </div>
-        <div>
-            <input type="checkbox" name="check" /> Banana
-            <input type="checkbox" name="check" /> Maça
-            <input type="checkbox" name="check" /> Morango
-        </div>
-        <div>
-            <select>
-                <option>Masculino</option>
-                <option>Feminino</option>
-            </select>
-        </div>
-        <div>
-            <textarea></textarea>
-        </div>
-        <div>
-            <input type="range" />
-            <input type="date" />
-            <input type="time" />
-            <input type="number" />
-        </div>
-    </form>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ul>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ol>
-    <table style="border: 1px solid">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Data de nascimento</th>
-                <th>Endereço</th>
-                <th>Sexo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Junior Paixao</td>
-                <td>24-06-1988</td>
-                <td>Rua dos Romanos</td>
-                <td>M</td>
-            </tr>
-            <tr>
-                <td>Junior Paixao</td>
-                <td>24-06-1988</td>
-                <td>Rua dos Romanos</td>
-                <td>M</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">Total:</td>
-                <td>67</td>
-            </tr>
-        </tfoot>
-    </table>
-    <a href="https://google.com.br">Ir para o google</a>
-    <button>Clique aqui</button>
+    <p id="texto">Meu texto que vai mudar de cor</p>
+    <button onclick="aplicarCor()">Aplicar cor</button>
 </body>
 </html>
