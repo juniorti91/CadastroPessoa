@@ -3,3 +3,6 @@
 - install-package entityframework
 - Enable-Migrations
 - update-database => executado após adicionar o string connection
+- get-package => exibe tudo que foi instalado no projeto
+- update-package bootstrap => atualizar o bootstrap
+- Install-Package vue -Version 2.6.11 - Instalação do VUE.js copiado diretamente do dite do NUGET

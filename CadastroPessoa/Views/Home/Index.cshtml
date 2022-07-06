@@ -10,13 +10,22 @@
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/vue.min.js"></script>
 </head>
 
 <body>
-    <p id="p1" class="vermelho" role="marquee">Paragrafo 1</p>
-    <p id="p2" class="vermelho">Paragrafo 2</p>
-    <p id="p3" class="amarelo">Paragrafo 3</p>
-    <p id="p4" class="amarelo">Paragrafo 4</p>
+    <div id="vuejs">
+        <p v-show="paragrafoVisivel">Paragrafo Qualquer</p>
+        <button v-on:click="paragrafoVisivel = !paragrafoVisivel">{{ paragrafoVisivel ? 'Esconder' : 'Mostrar' }}</button>
+        <br /><br />
+        <input type="text" v-model="meuTexto" placeholder="Digite para exibir" />
+        <h1>{{ meuTexto }}</h1>
+    </div>
+
+    <input id="campo" type="text" onkeyup="mudarValorVariavel()" />
+    <p id="paragrafoJquery"></p>
+
+
     <script src="~/Scripts/funcoes.js"></script>
 </body>
 </html>
