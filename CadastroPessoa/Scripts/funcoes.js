@@ -133,6 +133,6 @@ function sortearEnquantoNaoSairToyota() {
     document.getElementById('marcas2').innerHTML += 'Saiu a: ' + marcaSorteada;
 }
 
-// quando eu ja sabe o número de repetições, deve-se usar o FOR
+// quando eu ja sabe o número de repetições, deve-se usar o = FOR
 // quando quero fazer a repetição para cada item de uma lista = FOREACH
-// quando quero fazer algo até uma determinada condição ser sastifeita, usa o WHILE
+// quando quero fazer algo até uma determinada condição ser sastifeita, usa o = WHILE
