@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace CadastroPessoa.Controllers
 {
-    public class HomeController : Controller
+    public class PessoaController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Cadastrar()
         {
             return View();
         }
